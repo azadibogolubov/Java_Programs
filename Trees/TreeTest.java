@@ -1,3 +1,8 @@
+// A simple class to illustrate how to make a binary tree. 
+// No bells, no whistles. No insert, remove, etc...
+// Just how to make a tree.
+// http://www.tutorazadi.com/ComputerScience/Java
+
 class Tree
 {
 	String data;
