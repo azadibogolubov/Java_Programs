@@ -53,6 +53,11 @@ class Stack
 		else
 			return false;
 	}
+	
+	public int size()
+	{
+		return top;
+	}
 }
 
 public class StackTest
@@ -67,6 +72,9 @@ public class StackTest
 		System.out.println("Actual value: " + s.peek());
 		System.out.println("Popping stack now...");
 		for (int i = 0; i < 10; i++)
+		{
+			System.out.println("Stack size: " + s.size());
 			System.out.println(s.pop());
+		}
 	}
 }
