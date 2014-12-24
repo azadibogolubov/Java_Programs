@@ -26,6 +26,15 @@ class DFS
 		if (t.right != null)
 			DFSPreOrder(t.right);
 	}
+	public static void DFSInOrder(Tree t)
+	{
+		if (t.left != null)
+			DFSInOrder(t.left);
+		if (t.data != null)
+			System.out.println(t.data);
+		if (t.right != null)
+			DFSInOrder(t.right);
+	}
 }
 
 public class DFSTest
@@ -43,6 +52,9 @@ public class DFSTest
 				new Tree("cRight", null, null)
 			)
 		);
+		System.out.println("Printing pre-order");
 		DFS.DFSPreOrder(t);
+		System.out.println("\nPrinting in-order");
+		DFS.DFSInOrder(t);
 	}
 }
